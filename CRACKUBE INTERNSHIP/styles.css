@@ -1,0 +1,315 @@
+/*LAYOUT*/
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.left-sidebar{
+    margin:0;
+    width: 15vw;
+    height: 1024px;
+    background-color: #FFFFFF;
+    /* border-right: 2px solid black; */
+    border-right: 2px solid #F7F7F7;
+    position: relative;
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar{
+    height: 5vw;
+    width: 81vw;
+}
+.mainpage{
+    width: 81vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+}
+.content-section{
+    height: fit-content;
+    flex-basis: 45vw;
+    margin-left:3vw;
+    margin-right: 4vw;
+}
+.rightsidebar{
+    flex-basis: 25vw;
+    border: 2px solid black;
+    margin-right: 2vw;
+}
+
+/*Designing navbar*/
+/* .left-sidebar{
+    display: flex;
+    flex-direction: column;
+} */
+
+img{
+    display: block;
+    margin: auto;
+    margin-top: 1.2vw;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    margin-left: 1vw;
+    margin-right: auto;
+    width: 14vw;
+    padding: 0;
+}
+
+li{
+    padding-top: 0;
+    padding: 0.5vw;
+    padding-left: 1vw;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color:#787686;
+    border-radius: 15px;
+    margin: 0.5vw;
+}
+
+#dash{
+    background-color: #4B0ACE;
+    color: white;
+}
+
+li span{
+    margin-left: 15px; 
+    font-size: 15px;
+    display: inline;
+}
+li img{
+    margin: 0;
+    display: inline;
+}
+
+#TV::after{
+    content: " ";
+}
+
+li:hover{
+    color:white;
+    background-color: #4B0ACE;
+}
+
+/*NAVBAR*/
+.navbar{
+    height: max-content;
+    width: 81vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+/*SEARCH BAR*/
+input{
+    color: #FAFBFC;
+    width: 25vw;
+    border: #FFFFFF;
+}
+.searchbar{
+    margin-left:3vw;
+    padding: 1vw 2vw;
+    background-color: #FAFBFC;
+    border-radius: 25px;
+}
+/*ICONS ON RIGHT*/
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    height: inherit;
+    margin-left: auto;
+    margin-right: 1vw;
+}
+.icon{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 0;
+}
+.image > img{
+    padding: 0;
+    margin:0 1vw ;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+}
+
+/*Content section*/
+
+.content-section{
+    background-color: #4B0ACE;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+/*The rocket image*/
+
+.content-section > img{
+    height: 15vw;
+    margin-right: 3vw;
+    margin-left: auto;
+    padding-bottom: 2vw;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+/*3D game*/
+
+.intro{
+    position: absolute;
+    left:2vw;
+    top:1vw;
+    width: 18vw;
+}
+.title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.intro-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    word-wrap: break-word;
+}
+
+button{
+    height: 4vw;
+    background: #FFA910;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5vw;
+}
+
+button img{
+    display: block;
+    margin: auto;
+    padding: 0.5vw;
+}
+
+button span{
+    display: inline;
+    font-size: 15px;
+    padding: 0.5vw;
+}
+
+/*DESIGNING RIGHT SIDEBAR*/
+
+.rightsidebar{
+    background-color: #301C57;
+    border-radius: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.rightsidebar img{
+    display: block;
+    margin: auto;
+    padding-top: 2vw;
+}
+.rightsidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+.sidebar-title h2{
+    padding-left: 1vw;
+    color:white;
+}
+
+.sidebar-img{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: auto;
+}
+
+.sidebar-icon-text{
+    margin: 0.5vw;
+    color: #F7F7F7;
+    font-size: 1vw;
+}
+
+/*BOTTOM*/
+/*PART ONE*/
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+.partone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    margin-bottom: 3vw;
+    padding: 0vw;
+}
+.partone img{
+    padding:0;
+    margin: 0;
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 100%;
+    border: 0.3vw solid #533391;
+    background-color: #000000;
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    margin:0vw 1vw;
+    height: 2.5vw;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#parttwo{
+    margin-left: 2vw;
+}
+
+/*POPULAR GAMES*/
+
